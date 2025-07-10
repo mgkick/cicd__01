@@ -25,5 +25,11 @@ jobs:
         
       - name: 여러 명령어 문장 작성하기
         run: |
-          echo "Have a nice day"
+          echo "Have a nice day 다시해보기... 복습중"
           echo "Good luck"
+
+      # 참고: https://docs.github.com/en/actions/learn-github-actions/variables
+      - name: Github Actions 자체에 저장되어 있는 변수 사용해보기
+        run: |
+          echo $GITHUB_SHA
+          echo $GITHUB_REPOSITORY
